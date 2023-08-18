@@ -10,3 +10,4 @@ $ docker inspect some-mariadb
 
 Find                     "IPAddress": "172.17.0.2",
 
+php artisan serve
