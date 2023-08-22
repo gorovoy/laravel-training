@@ -20,6 +20,19 @@ $ docker inspect some-mariadb
 
 Find                     "IPAddress": "172.17.0.2",
 
+MARIADB_ROOT_PASSWORD=my-secret-pw
+
+
+$ docker exec -it some-mariadb bash
+
+$ mariadb -u root -p my-secret-pw
+$ create database laravel;
+$ php artisan migrate:install
+
+$ http://127.0.0.1:8000/telescope/requests
+
+create db laravel db
+
 # Vite
 ****
 https://laravel.com/docs/10.x/vite
